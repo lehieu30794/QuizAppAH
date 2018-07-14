@@ -3,6 +3,7 @@ package com.example.android.quizappah;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -30,15 +31,28 @@ public class MainActivity extends AppCompatActivity {
         boolean isVietnam = vietnamRadioButton.isChecked();
 
         RadioButton chinaRadioButton = findViewById(R.id.china_radio_button);
-        boolean hasChina = chinaRadioButton.isChecked();
+        boolean isChina = chinaRadioButton.isChecked();
+
+        CheckBox obamaCheckBox = findViewById(R.id.obama_check_box);
+        boolean isObama = obamaCheckBox.isChecked();
+
+        CheckBox hieuCheckBox = findViewById(R.id.hieu_check_box);
+        boolean isHieu = hieuCheckBox.isChecked();
+
+        CheckBox georgeoCheckBox = findViewById(R.id.george_check_box);
+        boolean isGergeo = georgeoCheckBox.isChecked();
+
+        CheckBox ronaldCheckBox = findViewById(R.id.ronald_check_box);
+        boolean isRonald = ronaldCheckBox.isChecked();
 
 
-        int score_get_displayed = calculateScore(isIndia, isVietnam, hasChina);
+        int score_get_displayed = calculateScore(isIndia, isVietnam, isChina, isObama, isHieu, isGergeo, isRonald);
         displayScore(score_get_displayed);
     }
 //    Will need method calculating the number of correct answer
 
-    public int calculateScore(boolean hasIndia, boolean hasVietnam, boolean hasChina) {
+    public int calculateScore(boolean hasIndia, boolean hasVietnam, boolean hasChina,
+                              boolean hasObama, boolean hasHieu, boolean hasGeorge, boolean hasRonald) {
         if (hasIndia) {
             score = score + 1;
         }
@@ -46,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
             score = score + 0;
         }
         if (hasChina) {
+            score = score + 0;
+        }
+
+        if (hasObama && hasGeorge && hasRonald != hasHieu) {
+            score = score + 1;
+        } else {
             score = score + 0;
         }
 
