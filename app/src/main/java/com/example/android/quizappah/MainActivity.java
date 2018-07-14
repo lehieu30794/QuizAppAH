@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     int score = 0;
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 isBrazil, isCanada, isNigeria, germanyInput, usaInput);
         displayScore(score_get_displayed);
     }
-//    Will need method calculating the number of correct answer
+//    Calculating the number of correct answer
 
     public int calculateScore(boolean hasIndia, boolean hasVietnam, boolean hasChina,
                               boolean hasObama, boolean hasHieu, boolean hasGeorge, boolean hasRonald,
@@ -108,12 +109,34 @@ public class MainActivity extends AppCompatActivity {
             score = score;
         }
 
-        if (usaInput.matches("USA|usa|United States|United States of America|The United States|The United States of America")){
+        if (usaInput.matches("USA|usa|United States|United States of America|The United States|The United States of America")) {
             score += 1;
         } else {
             score = score;
         }
 
         return score;
+    }
+
+
+    // Display Toast messages
+    public void indiaRadioButton(View view) {
+        Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
+    }
+
+    public void chinaRadioButton(View view) {
+        Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
+    }
+
+    public void hieuCheckBox(View view) {
+        Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
+    }
+
+    public void brazilRadioButton(View view) {
+        Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
+    }
+
+    public void nigeriaRadioButton(View view) {
+        Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
     }
 }
