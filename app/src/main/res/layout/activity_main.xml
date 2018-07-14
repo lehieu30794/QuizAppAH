@@ -25,6 +25,7 @@
             android:textAllCaps="true" />
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question 1" />
