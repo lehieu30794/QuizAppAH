@@ -34,6 +34,28 @@
             android:layout_height="wrap_content"
             android:text="What country has the second largest population in the world?" />
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vietnam" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="China" />
+        </RadioGroup>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +64,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="In what country would you find the cities Glasgow and Edinburgh?" />
+            android:text="Choose all US presidents" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barack Obama" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hieu T. Le" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="George W. Bush" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ronald Reagan" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -54,6 +97,28 @@
             android:layout_height="wrap_content"
             android:text="What country has a maple leaf on their national flag?" />
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brazil" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canada" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nigeria" />
+        </RadioGroup>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +127,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What country is home to the Great Barrier Reef?" />
+            android:text="Adidas and Volkswagen are companies from what country?" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Country\' name"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -73,5 +143,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What country was the first to land a man on the moon?" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Country\'s Name" />
     </LinearLayout>
 </ScrollView>
