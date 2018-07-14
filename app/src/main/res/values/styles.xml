@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="QuestionStyle">
+        <item name="textColor">#D32F2F</item>
+        <item name="textStyle">bold</item>
+        <item name="textSize">32dp</item>
+    </style>
+
 </resources>
