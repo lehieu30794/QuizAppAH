@@ -19,6 +19,7 @@
             android:textAllCaps="true" />
 
         <TextView
+            android:id="@+id/score_text_view"
             style="@style/ScoreStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,18 +49,21 @@
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="indiaRadioButton"
                 android:text="India" />
 
             <RadioButton
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="vietnamRadioButton"
                 android:text="Vietnam" />
 
             <RadioButton
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="chinaRadioButton"
                 android:text="China" />
         </RadioGroup>
 
@@ -79,24 +83,28 @@
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="obamaCheckBox"
             android:text="Barack Obama" />
 
         <CheckBox
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="hieuCheckBox"
             android:text="Hieu T. Le" />
 
         <CheckBox
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="georgeCheckBox"
             android:text="George W. Bush" />
 
         <CheckBox
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="ronaldCheckBox"
             android:text="Ronald Reagan" />
 
 
@@ -122,18 +130,21 @@
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="brazilRadioButton"
                 android:text="Brazil" />
 
             <RadioButton
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="canadaRadioButton"
                 android:text="Canada" />
 
             <RadioButton
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="nigeriaRadioButton"
                 android:text="Nigeria" />
         </RadioGroup>
 
@@ -150,6 +161,7 @@
             android:text="Adidas and Volkswagen are companies from what country?" />
 
         <EditText
+            android:id="@+id/germany_edit_text"
             style="@style/AnswerChoiceDesign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -168,6 +180,7 @@
             android:text="What country was the first to land a man on the moon?" />
 
         <EditText
+            android:id="@+id/usa_edit_text"
             style="@style/AnswerChoiceDesign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -178,6 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
+            android:onClick="submit"
             android:text="Submit"
             android:textAllCaps="false"
             android:textColor="#D32F2F"
