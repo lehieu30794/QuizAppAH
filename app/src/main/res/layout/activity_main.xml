@@ -46,24 +46,24 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/india_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="indiaRadioButton"
                 android:text="India" />
 
             <RadioButton
+                android:id="@+id/vietnam_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="vietnamRadioButton"
                 android:text="Vietnam" />
 
             <RadioButton
+                android:id="@+id/china_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="chinaRadioButton"
                 android:text="China" />
         </RadioGroup>
 
@@ -80,31 +80,31 @@
             android:text="Choose all US presidents" />
 
         <CheckBox
+            android:id="@+id/obama_check_box"
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="obamaCheckBox"
             android:text="Barack Obama" />
 
         <CheckBox
+            android:id="@+id/hieu_check_box"
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="hieuCheckBox"
             android:text="Hieu T. Le" />
 
         <CheckBox
+            android:id="@+id/george_check_box"
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="georgeCheckBox"
             android:text="George W. Bush" />
 
         <CheckBox
+            android:id="@+id/ronald_check_box"
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="ronaldCheckBox"
             android:text="Ronald Reagan" />
 
 
@@ -127,24 +127,24 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/brazil_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="brazilRadioButton"
                 android:text="Brazil" />
 
             <RadioButton
+                android:id="@+id/canada_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="canadaRadioButton"
                 android:text="Canada" />
 
             <RadioButton
+                android:id="@+id/nigeria_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="nigeriaRadioButton"
                 android:text="Nigeria" />
         </RadioGroup>
 
