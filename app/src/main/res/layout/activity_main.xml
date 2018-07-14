@@ -172,5 +172,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type Country\'s Name" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#D32F2F"
+            android:textSize="36sp" />
     </LinearLayout>
 </ScrollView>
