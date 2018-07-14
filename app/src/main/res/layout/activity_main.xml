@@ -31,6 +31,7 @@
             android:text="Question 1" />
 
         <TextView
+            style="@style/QuestionContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What country has the second largest population in the world?" />
