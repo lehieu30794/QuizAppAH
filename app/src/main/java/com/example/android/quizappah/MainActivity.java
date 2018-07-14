@@ -60,9 +60,12 @@ public class MainActivity extends AppCompatActivity {
         EditText germanyEditText = findViewById(R.id.germany_edit_text);
         String germanyInput = germanyEditText.getText().toString();
 
+        EditText usaEditText = findViewById(R.id.usa_edit_text);
+        String usaInput = usaEditText.getText().toString();
+
 
         int score_get_displayed = calculateScore(isIndia, isVietnam, isChina, isObama, isHieu, isGergeo, isRonald,
-                isBrazil, isCanada, isNigeria, germanyInput);
+                isBrazil, isCanada, isNigeria, germanyInput, usaInput);
         displayScore(score_get_displayed);
     }
 //    Will need method calculating the number of correct answer
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     public int calculateScore(boolean hasIndia, boolean hasVietnam, boolean hasChina,
                               boolean hasObama, boolean hasHieu, boolean hasGeorge, boolean hasRonald,
                               boolean hasBrazil, boolean hasCanada, boolean hasNigeria,
-                              String germanyInput) {
+                              String germanyInput, String usaInput) {
         if (hasIndia) {
             score = score + 1;
         }
@@ -99,7 +102,13 @@ public class MainActivity extends AppCompatActivity {
             score = score;
         }
 //Very interesting comparison; can't use ==
-        if (germanyInput.equals("Germany")) {
+        if (germanyInput.matches("Germany|germany")) {
+            score += 1;
+        } else {
+            score = score;
+        }
+
+        if (usaInput.matches("USA|usa|United States|United States of America|The United States|The United States of America")){
             score += 1;
         } else {
             score = score;
