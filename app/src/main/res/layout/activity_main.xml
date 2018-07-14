@@ -50,10 +50,10 @@
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="indiaRadioButton"
                 android:text="India" />
 
             <RadioButton
+                android:onClick="vietnamRadioButton"
                 android:id="@+id/vietnam_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
@@ -214,7 +214,7 @@
                 android:layout_marginBottom="48dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:onClick="reset"
+                android:onClick="resetScore"
                 android:text="Reset"
                 android:textAllCaps="false"
                 android:textColor="#D32F2F"

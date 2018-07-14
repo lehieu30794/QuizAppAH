@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     // Display Toast messages
-    public void indiaRadioButton(View view) {
+    public void vietnamRadioButton(View view) {
         Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
     }
 
@@ -138,5 +138,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void nigeriaRadioButton(View view) {
         Toast.makeText(this, "Search GOOGLE for the correct answer", Toast.LENGTH_SHORT).show();
+    }
+
+//    Reset score
+    public void resetScore (View view){
+        score = 0;
+        displayScore(score);
     }
 }
