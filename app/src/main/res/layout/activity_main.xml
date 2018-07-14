@@ -59,11 +59,13 @@
         </RadioGroup>
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question 2" />
 
         <TextView
+            style="@style/QuestionContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Choose all US presidents" />
@@ -90,11 +92,13 @@
 
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question 3" />
 
         <TextView
+            style="@style/QuestionContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What country has a maple leaf on their national flag?" />
@@ -122,11 +126,13 @@
         </RadioGroup>
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question 4" />
 
         <TextView
+            style="@style/QuestionContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Adidas and Volkswagen are companies from what country?" />
@@ -134,14 +140,16 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Type Country\' name"/>
+            android:hint="Type Country\' name" />
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question 5" />
 
         <TextView
+            style="@style/QuestionContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What country was the first to land a man on the moon?" />
