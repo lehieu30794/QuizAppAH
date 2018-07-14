@@ -1,9 +1,12 @@
 package com.example.android.quizappah;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -45,14 +48,29 @@ public class MainActivity extends AppCompatActivity {
         CheckBox ronaldCheckBox = findViewById(R.id.ronald_check_box);
         boolean isRonald = ronaldCheckBox.isChecked();
 
+        RadioButton brazilRadioButton = findViewById(R.id.brazil_radio_button);
+        boolean isBrazil = brazilRadioButton.isChecked();
 
-        int score_get_displayed = calculateScore(isIndia, isVietnam, isChina, isObama, isHieu, isGergeo, isRonald);
+        RadioButton canadaRadioButton = findViewById(R.id.canada_radio_button);
+        boolean isCanada = canadaRadioButton.isChecked();
+
+        RadioButton nigeriaRadioButton = findViewById(R.id.nigeria_radio_button);
+        boolean isNigeria = nigeriaRadioButton.isChecked();
+
+        EditText germanyEditText = findViewById(R.id.germany_edit_text);
+        String germanyInput = germanyEditText.getText().toString();
+
+
+        int score_get_displayed = calculateScore(isIndia, isVietnam, isChina, isObama, isHieu, isGergeo, isRonald,
+                isBrazil, isCanada, isNigeria, germanyInput);
         displayScore(score_get_displayed);
     }
 //    Will need method calculating the number of correct answer
 
     public int calculateScore(boolean hasIndia, boolean hasVietnam, boolean hasChina,
-                              boolean hasObama, boolean hasHieu, boolean hasGeorge, boolean hasRonald) {
+                              boolean hasObama, boolean hasHieu, boolean hasGeorge, boolean hasRonald,
+                              boolean hasBrazil, boolean hasCanada, boolean hasNigeria,
+                              String germanyInput) {
         if (hasIndia) {
             score = score + 1;
         }
@@ -67,6 +85,24 @@ public class MainActivity extends AppCompatActivity {
             score = score + 1;
         } else {
             score = score + 0;
+        }
+
+        if (hasBrazil) {
+            score = score;
+        }
+
+        if (hasCanada) {
+            score += 1;
+        }
+
+        if (hasNigeria) {
+            score = score;
+        }
+//Very interesting comparison; can't use ==
+        if (germanyInput.equals("Germany")) {
+            score += 1;
+        } else {
+            score = score;
         }
 
         return score;
