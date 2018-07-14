@@ -46,11 +46,11 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:onClick="indiaRadioButton"
                 android:id="@+id/india_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="indiaRadioButton"
                 android:text="India" />
 
             <RadioButton
@@ -61,11 +61,11 @@
                 android:text="Vietnam" />
 
             <RadioButton
-                android:onClick="chinaRadioButton"
                 android:id="@+id/china_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="chinaRadioButton"
                 android:text="China" />
         </RadioGroup>
 
@@ -89,11 +89,11 @@
             android:text="Barack Obama" />
 
         <CheckBox
-            android:onClick="hieuCheckBox"
             android:id="@+id/hieu_check_box"
             style="@style/AnswerChoiceDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="hieuCheckBox"
             android:text="Hieu T. Le" />
 
         <CheckBox
@@ -130,11 +130,11 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:onClick="brazilRadioButton"
                 android:id="@+id/brazil_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="brazilRadioButton"
                 android:text="Brazil" />
 
             <RadioButton
@@ -145,11 +145,11 @@
                 android:text="Canada" />
 
             <RadioButton
-                android:onClick="nigeriaRadioButton"
                 android:id="@+id/nigeria_radio_button"
                 style="@style/AnswerChoiceDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="nigeriaRadioButton"
                 android:text="Nigeria" />
         </RadioGroup>
 
@@ -191,15 +191,34 @@
             android:layout_height="wrap_content"
             android:hint="Type Country\'s Name" />
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:onClick="submit"
-            android:text="Submit"
-            android:textAllCaps="false"
-            android:textColor="#D32F2F"
-            android:textSize="36sp" />
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:onClick="submit"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#D32F2F"
+                android:textSize="36sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:onClick="reset"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="#D32F2F"
+                android:textSize="36sp" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
