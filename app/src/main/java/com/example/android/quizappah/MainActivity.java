@@ -68,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         int score_get_displayed = calculateScore(isIndia, isVietnam, isChina, isObama, isHieu, isGergeo, isRonald,
                 isBrazil, isCanada, isNigeria, germanyInput, usaInput);
         displayScore(score_get_displayed);
+
+        score = 0;
     }
 //    Calculating the number of correct answer
 
