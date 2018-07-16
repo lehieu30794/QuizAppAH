@@ -107,14 +107,14 @@ public class MainActivity extends AppCompatActivity {
             score = score;
         }
 //Very interesting comparison; can't use ==
-        if (germanyInput.matches("Germany|germany")) {
+        if (germanyInput.equalsIgnoreCase("Germany")) {
             score += 1;
         } else {
             score = score;
         }
 
         if (usaInput.matches("USA|usa|United States|United States of America|The United States|The United States of America")) {
-            score += 1;
+            score ++;
         } else {
             score = score;
         }
