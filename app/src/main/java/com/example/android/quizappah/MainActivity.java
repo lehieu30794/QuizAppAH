@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(int score) {
         TextView scoreTextView = (TextView) findViewById(R.id.score_text_view);
         scoreTextView.setText("" + score);
+
+        Toast.makeText(this, "You get " + score + " out of 5", Toast.LENGTH_SHORT).show();
     }
 
     //    Display score when hit submit
