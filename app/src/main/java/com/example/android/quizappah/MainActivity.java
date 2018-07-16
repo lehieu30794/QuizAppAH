@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             score = score + 0;
         }
 
-        if (hasObama && hasGeorge && hasRonald != hasHieu) {
+        if (hasObama && hasGeorge && hasRonald) {
             score = score + 1;
         } else {
             score = score + 0;
